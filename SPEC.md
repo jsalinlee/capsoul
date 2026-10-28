@@ -8,7 +8,8 @@ A personal time capsule: a calendar-first scrapbook that is effortless to add to
 
 ## Principles
 
-- **Ease over depth.** A new entry takes 3 taps or fewer from app open. No modal chains, no multi-page forms.
+- **Ease over depth.** A new entry takes 3 taps or fewer from app open. No multi-page forms.
+- **Modals: a guideline, not a ban.** Good use: short, glanceable sheets that keep secondary controls out of the main visual flow and close in one tap (e.g. the month/year picker). Avoid: modals that scroll, hold forms, or open other modals. Exceptions are fine when justified; note the reason in this spec.
 - **Looking back is the payoff.** Moving through time (months, days) is fast and visual.
 - **The user owns their data.** On-device first; export everything at any time.
 
@@ -20,7 +21,7 @@ A personal time capsule: a calendar-first scrapbook that is effortless to add to
 - Header shows month and year (e.g. "October 2026") and is tappable: it opens a compact month/year picker for jumping directly to any month. The header always reflects the month currently shown, including after swiping.
   - Affordance: a small down-chevron beside the title, so it reads as a control, not a label. Hit area covers the whole title, not only the chevron.
   - Picker: a bottom sheet with a year row (‹ 2026 ›) above a 3×4 grid of months; tapping a month jumps there and closes the sheet. Dismiss by tapping outside or swiping down. Current month highlighted; months with entries marked.
-  - This is the one modal in the month view. It's allowed because it navigates rather than collects input, and it closes in one tap.
+  - The model example of the modal guideline: navigation, not input, and it closes in one tap.
 - Tap a day → Day view.
 
 ### 2. Day view
