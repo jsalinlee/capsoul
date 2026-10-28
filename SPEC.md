@@ -17,6 +17,10 @@ A personal time capsule: a calendar-first scrapbook that is effortless to add to
 ### 1. Month view (home)
 - Grid of days. A day with entries shows a thumbnail and its mood (see open questions 1–2).
 - Swipe between months; "Today" button to jump back.
+- Header shows month and year (e.g. "October 2026") and is tappable: it opens a compact month/year picker for jumping directly to any month. The header always reflects the month currently shown, including after swiping.
+  - Affordance: a small down-chevron beside the title, so it reads as a control, not a label. Hit area covers the whole title, not only the chevron.
+  - Picker: a bottom sheet with a year row (‹ 2026 ›) above a 3×4 grid of months; tapping a month jumps there and closes the sheet. Dismiss by tapping outside or swiping down. Current month highlighted; months with entries marked.
+  - This is the one modal in the month view. It's allowed because it navigates rather than collects input, and it closes in one tap.
 - Tap a day → Day view.
 
 ### 2. Day view
