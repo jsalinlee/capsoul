@@ -53,6 +53,8 @@ Two separate concepts; only the day mood is ever analyzed.
 
 Preset day moods (stable text keys, each shown with a default emoji): `happy`, `excited`, `grateful`, `calm`, `tired`, `bored`, `anxious`, `sad`, `angry`, `neutral`.
 
+Picker: a radial layout that mirrors the circumplex. Right = pleasant, top = more energy; `neutral` in the center. Going around: excited → happy → grateful → calm → tired → bored → sad → anxious → angry. Neighbors are similar, so the user can refine ("more grateful than calm") instead of scanning a list. Shown in a bottom sheet (fits the modal guideline). Each mood shows its emoji and label; targets at least 48dp. Ring placements are approximate design choices, not research-exact coordinates.
+
 Rules:
 - **Moods are nominal (categories), not a scale.** Store text keys, never numbers. Never average them. Analysis uses counts and proportions.
 - **Keys are permanent.** A key is never renamed, reused or deleted, so years of past data keep their meaning. Display names and emoji may change.
